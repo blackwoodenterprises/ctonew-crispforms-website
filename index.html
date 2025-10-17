@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CrispForms - Create conversational forms, multi-step wizards, and single-page forms. Typeform alternative with unlimited forms and submissions for free.">
+    <title>CrispForms - Build Beautiful Conversational Forms | Free Typeform Alternative</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">CrispForms</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#integrations">Integrations</a></li>
+                    <li><a href="#use-cases">Use Cases</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="https://app.crispforms.com" class="nav-link-signin">Sign In</a></li>
+                    <li><a href="https://app.crispforms.com" class="btn btn-primary btn-sm">Sign Up Free</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge">🚀 Typeform Alternative - Unlimited Forms & Submissions FREE</div>
+                <h1 class="hero-title">Build Beautiful Conversational Forms in Minutes</h1>
+                <p class="hero-subtitle">Create conversational forms, multi-step wizards, and single-page forms with our visual builder. Connect to Google Sheets, Zapier, n8n, webhooks, WordPress and more. No coding required.</p>
+                <div class="hero-buttons">
+                    <a href="https://app.crispforms.com" class="btn btn-primary btn-lg">Start Building Free</a>
+                    <a href="https://forms.crispforms.com" class="btn btn-secondary btn-lg">View Form Gallery</a>
+                    <button class="btn btn-outline btn-lg" onclick="openVideoModal()">▶ View Video Demo</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-value">300+</div>
+                        <div class="stat-label">Forms Created</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">100+</div>
+                        <div class="stat-label">Active Users</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">99.9%</div>
+                        <div class="stat-label">Uptime SLA</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">4.9/5</div>
+                        <div class="stat-label">User Rating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>What You Can Do with CrispForms</h2>
+                <p>Everything you need to build, deploy, and automate forms—all in one platform</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Visual Form Builder</h3>
+                    <p>Drag-and-drop builder with 16 field types, 29 themes, and 14 pre-built templates. Create forms in minutes without writing code.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Conversational Forms</h3>
+                    <p>Build chat-like conversational forms that feel natural and increase completion rates by up to 40%.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Multi-Step Wizards</h3>
+                    <p>Break complex forms into simple steps. Perfect for surveys, registrations, and applications with progress tracking.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Google Sheets Sync</h3>
+                    <p>Automatically push submissions to Google Sheets. No Zapier needed. OAuth authentication with automatic token refresh.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Zapier & n8n Integration</h3>
+                    <p>Native support for Zapier and n8n. Connect to 5000+ apps and build complex automation workflows.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>Powerful Webhooks</h3>
+                    <p>Send data to any endpoint with webhooks (signatures + retries) or direct webhooks. JSON transformation included.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✉️</div>
+                    <h3>Email Automation</h3>
+                    <p>Instant notifications to your team and automated responses to users. Custom templates and multiple recipients supported.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📁</div>
+                    <h3>File Upload Handling</h3>
+                    <p>Accept file uploads with validation and secure storage. No need to set up AWS S3 or configure storage yourself.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎭</div>
+                    <h3>29 Beautiful Themes</h3>
+                    <p>Choose from 29 professionally designed themes. From minimal to bold, light to dark—match your brand perfectly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔌</div>
+                    <h3>Flexible Embedding</h3>
+                    <p>Embed as modal popup, floating chatbox, side drawer, or button trigger. Works on any website—no backend required.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Built-in Spam Protection</h3>
+                    <p>Honeypot fields and intelligent rate limiting (5 req/10s, 100 req/min). Block spam before it hits your inbox.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📉</div>
+                    <h3>Submission Analytics</h3>
+                    <p>Track submissions, conversion rates, and form performance. Export data as CSV or JSON anytime you need.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Types Section -->
+    <section class="form-types">
+        <div class="container">
+            <div class="section-header">
+                <h2>Build Any Type of Form</h2>
+                <p>From simple contact forms to complex multi-step surveys—we've got you covered</p>
+            </div>
+            <div class="form-types-grid">
+                <div class="form-type-card">
+                    <div class="form-type-header">
+                        <div class="form-type-icon">💬</div>
+                        <h3>Conversational Forms</h3>
+                    </div>
+                    <p>Chat-like interface that asks one question at a time. Perfect for mobile users and increases engagement by making forms feel like conversations.</p>
+                    <ul class="form-type-features">
+                        <li>One question at a time</li>
+                        <li>Mobile-first design</li>
+                        <li>Higher completion rates</li>
+                    </ul>
+                </div>
+                <div class="form-type-card">
+                    <div class="form-type-header">
+                        <div class="form-type-icon">🧩</div>
+                        <h3>Multi-Step Wizards</h3>
+                    </div>
+                    <p>Break long forms into logical steps with progress indicators. Ideal for registrations, applications, and complex surveys.</p>
+                    <ul class="form-type-features">
+                        <li>Progress tracking</li>
+                        <li>Back/forward navigation</li>
+                        <li>Welcome & thank you screens</li>
+                    </ul>
+                </div>
+                <div class="form-type-card">
+                    <div class="form-type-header">
+                        <div class="form-type-icon">📄</div>
+                        <h3>Single-Page Forms</h3>
+                    </div>
+                    <p>Classic all-in-one forms with all fields visible. Best for contact forms, feedback, and quick data collection.</p>
+                    <ul class="form-type-features">
+                        <li>All fields at once</li>
+                        <li>Fast completion</li>
+                        <li>Traditional UX</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrations Section -->
+    <section id="integrations" class="integrations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Connect to Everything</h2>
+                <p>Native integrations with your favorite tools. No complex setup, no middleware needed.</p>
+            </div>
+            <div class="integrations-grid">
+                <div class="integration-card">
+                    <div class="integration-icon">📊</div>
+                    <h4>Google Sheets</h4>
+                    <p>Auto-sync submissions to spreadsheets with OAuth authentication</p>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-icon">⚡</div>
+                    <h4>Zapier</h4>
+                    <p>Connect to 5000+ apps with native Zapier integration</p>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-icon">🔄</div>
+                    <h4>n8n</h4>
+                    <p>Build complex workflows with open-source automation</p>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-icon">🔗</div>
+                    <h4>Webhooks</h4>
+                    <p>Send data to any endpoint with direct webhooks</p>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-icon">✉️</div>
+                    <h4>Email</h4>
+                    <p>Instant notifications and automated user responses</p>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-icon">💬</div>
+                    <h4>Slack</h4>
+                    <p>Real-time submission alerts in your Slack channels</p>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-icon">🎮</div>
+                    <h4>Discord</h4>
+                    <p>Notify your Discord server instantly on submissions</p>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-icon">🔧</div>
+                    <h4>Custom API</h4>
+                    <p>REST API for custom integrations and workflows</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Section -->
+    <section class="why-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Developers & Teams Love CrispForms</h2>
+                <p>Built for speed, security, and scale—without the complexity</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">⚡</div>
+                    <h3>5-Minute Setup</h3>
+                    <p>Create a form, get your endpoint, and start receiving submissions in minutes—not hours or days.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🔒</div>
+                    <h3>Enterprise Security</h3>
+                    <p>SSL/TLS encryption, AES-256 data encryption, SOC 2 Type II compliance, and GDPR-ready out of the box.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">📈</div>
+                    <h3>Scales Automatically</h3>
+                    <p>From 10 to 10,000 submissions per day. Infrastructure scales automatically with no configuration needed.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">👨‍💻</div>
+                    <h3>Developer-Friendly API</h3>
+                    <p>Clean REST API with JSON/FormData support. Works with React, Vue, Next.js, and any framework you love.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">💾</div>
+                    <h3>Your Data, Your Control</h3>
+                    <p>Export everything as CSV or JSON. No vendor lock-in. Delete anytime with one click.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🚀</div>
+                    <h3>No Backend Required</h3>
+                    <p>No servers to manage, no databases to configure, no infrastructure to maintain. We handle everything.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Testimonials</h2>
+                <p>What our users are saying about CrispForms</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"CrispForms saved us weeks of development time. The form builder is intuitive, and the Google Sheets integration works flawlessly. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SC</div>
+                        <div class="author-info">
+                            <div class="author-name">Sarah Chen</div>
+                            <div class="author-role">Product Manager, TechCorp</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a freelance developer, CrispForms is a game-changer. I can deliver complex forms to clients without building backends. The conversational forms are amazing!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div class="author-info">
+                            <div class="author-name">Marcus Rodriguez</div>
+                            <div class="author-role">Freelance Developer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The Zapier integration alone is worth it. We automated our entire lead generation workflow in an afternoon. Customer support is excellent too."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">EW</div>
+                        <div class="author-info">
+                            <div class="author-name">Emily Watson</div>
+                            <div class="author-role">Marketing Director, GrowthLab</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="use-cases" class="use-cases">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perfect for Every Use Case</h2>
+                <p>From simple contact forms to complex workflows—CrispForms adapts to your needs</p>
+            </div>
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <div class="use-case-icon">📧</div>
+                    <h4>Contact Forms</h4>
+                    <p>Connect with website visitors</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">💭</div>
+                    <h4>Feedback Collection</h4>
+                    <p>Gather user insights</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">🎯</div>
+                    <h4>Lead Generation</h4>
+                    <p>Capture qualified leads</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">🎟️</div>
+                    <h4>Event Registration</h4>
+                    <p>Manage attendees easily</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">📋</div>
+                    <h4>Customer Surveys</h4>
+                    <p>Measure satisfaction</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">🎫</div>
+                    <h4>Support Tickets</h4>
+                    <p>Streamline customer support</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">💼</div>
+                    <h4>Job Applications</h4>
+                    <p>Hire top talent faster</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">🛒</div>
+                    <h4>Order Forms</h4>
+                    <p>Process orders smoothly</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">📅</div>
+                    <h4>Booking Forms</h4>
+                    <p>Schedule appointments</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">📊</div>
+                    <h4>Market Research</h4>
+                    <p>Collect valuable data</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">📬</div>
+                    <h4>Newsletter Signups</h4>
+                    <p>Grow your audience</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="use-case-icon">✨</div>
+                    <h4>And Much More...</h4>
+                    <p>Unlimited possibilities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Start free, upgrade as you grow. No hidden fees.</p>
+            </div>
+            <div class="pricing-card">
+                <div class="pricing-badge">MOST POPULAR</div>
+                <h3>Free Forever</h3>
+                <div class="pricing-price">
+                    <span class="price-value">$0</span>
+                    <span class="price-period">/month</span>
+                </div>
+                <div class="pricing-highlight">
+                    <div class="highlight-icon">✨</div>
+                    <div class="highlight-text">
+                        <strong>Unlimited Forms</strong> and <strong>Unlimited Submissions</strong>
+                    </div>
+                </div>
+                <ul class="pricing-features">
+                    <li>✓ Email Notifications</li>
+                    <li>✓ Webhooks</li>
+                    <li>✓ Multi File Upload</li>
+                    <li>✓ CORS Protection</li>
+                    <li>✓ Secure Endpoints</li>
+                    <li>✓ Zapier Integration</li>
+                    <li>✓ Data Export</li>
+                    <li>✓ Priority Support</li>
+                    <li>✓ Advanced JSON Validation</li>
+                </ul>
+                <a href="https://app.crispforms.com" class="btn btn-primary btn-lg btn-full">Get Started Free</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Build Better Forms?</h2>
+                <p>Join hundreds of developers and teams who trust CrispForms for their form needs</p>
+                <div class="cta-buttons">
+                    <a href="https://app.crispforms.com" class="btn btn-primary btn-lg">Start Building Free</a>
+                    <a href="https://forms.crispforms.com" class="btn btn-outline-white btn-lg">View Form Gallery</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-logo">CrispForms</h4>
+                    <p>Beautiful conversational forms, unlimited and free. The Typeform alternative developers love.</p>
+                </div>
+                <div class="footer-section">
+                    <h5>Product</h5>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#integrations">Integrations</a></li>
+                        <li><a href="#use-cases">Use Cases</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="https://forms.crispforms.com">Form Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="https://app.crispforms.com">Documentation</a></li>
+                        <li><a href="https://app.crispforms.com">API Reference</a></li>
+                        <li><a href="https://app.crispforms.com">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        <li><a href="acceptable-use.html">Acceptable Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CrispForms. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeVideoModal()">&times;</span>
+            <div class="video-container">
+                <iframe id="videoFrame" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
